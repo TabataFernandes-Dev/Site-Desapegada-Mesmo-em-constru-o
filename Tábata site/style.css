@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    color: #130f1d;
+}
+
+a { /* botão instagram */
+    color: #dfa3d7;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0%;
+    padding-top: 0%;
+} 
+
+a:hover {
+    opacity: 0.7;
+} /* fim do botão instagram */
+
+.logo { /* logotipo */
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+} /* fim da logotipo */
+
+    nav { /* barra de navegação */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: #72435a;
+        height: 8vh;
+    } /* fim da barra de navegação */
+    
+    .nav-list { /* lista da barra de navegaçao */
+        list-style: none;
+        display: flex;
+    } 
+    
+    .nav-list li {
+        letter-spacing: 0px;
+        margin-left: 25px;
+    } /* fim da lista da barra de navegaçao */
+    
+    .mobile-menu { /* menu */
+        cursor: pointer;
+        margin: 5%;
+        padding-top: 0%;
+    } 
+    
+    .mobile-menu div {
+        width: 25px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+    } /* fim do menu */
+    
+    @media (max-width: 999px) {
+        body {
+         overflow-x: hidden;
+        } /* barra de navegação */
+      .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgb(194, 56, 194)5f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+       }
+        .nav-list li {
+            margin-left: 0px;
+            opacity: 0px;
+        }
+        .mobile-menu {
+            display: block;
+    
+        }
+    }
+    .nav-list.active {
+        transform: translateX(0);
+    } /* fim da barra de navegação */
+
+    h1 {
+        background-color: #ffffff;
+        margin: 30px;
+            font-size: "15ch";
+            text-align: center;
+            color: rgb(80, 36, 88);
+        }
+        
+        h2 {
+            width: "0%";
+            height: "0%";
+            margin: 20px;
+            font-size: 18px;
+            text-align: left;
+            color: rgb(207, 75, 185);
+        }
+
+        h6 {
+            background-color: #ffffff;
+            margin: 5%;
+            width: 1190px;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(67, 27, 75);
+        }
+
+    .product {
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        display: inline-block;
+    }
+    .product img {
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+    .add-to-cart {
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    button {
+        background-color: rgb(178, 65, 201);
+        color: white;
+        border: 0.3px solid rgb(233, 110, 206);
+        padding: 3px 40px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+        width: 100px;
+        font-size: "15ch";
+        text-align: center;
+    }
